@@ -32,6 +32,14 @@ nav > h1 {
   float: left;
   margin: 22px 200px;
 }
+nav > h1 a {
+  color: white;
+  transition: var(--transitionColor);
+}
+/* ****** */
+nav > h1 a:hover {
+  color: var(--ramadyLight);
+}
 nav > ul {
   width: 30%;
   height: 100%;
