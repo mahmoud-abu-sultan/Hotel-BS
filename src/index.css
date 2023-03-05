@@ -1,0 +1,199 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+:root {
+  --ramadyDark: rgb(54, 51, 47);
+  --ramadyMid: rgb(92, 89, 84);
+  --ramadyLight: rgb(209 152 69 / 84%);
+  --transitionColor: color 0.3s ease-in-out;
+  --transitionBsckgroundColor: background-color 0.5s
+    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+a {
+  text-decoration: none;
+}
+/* -------------------- nav */
+nav {
+  background-color: var(--ramadyDark);
+  color: white;
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+nav > h1 {
+  width: 10%;
+  font-size: xx-large;
+  font-weight: bolder;
+  float: left;
+  margin: 22px 200px;
+}
+nav > ul {
+  width: 30%;
+  height: 100%;
+  float: right;
+  margin: 0 150px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  transition: var(--transitionBsckgroundColor);
+}
+/* ****** */
+nav > ul > li:hover {
+  background-color: var(--ramadyMid);
+}
+nav > ul a {
+  color: inherit;
+  font-size: large;
+  font-weight: bold;
+  margin: 0;
+  transition: var(--transitionColor);
+}
+/* ******* */
+nav > ul a:hover {
+  color: var(--ramadyLight);
+}
+/* -------------------------- header */
+header {
+  width: 100%;
+  height: 58.5em;
+  background-image: url("../public/img/WhatsApp\ Image\ 2023-02-16\ at\ 4.40.32\ PM.jpeg");
+  background-size: cover;
+}
+header > div {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 20em 0 0 0;
+  text-align: center;
+  background-color: rgba(56, 51, 44, 0.137);
+  color: white;
+}
+header > div > h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+header > div > h1 > span {
+  color: var(--ramadyLight);
+}
+header > div > p {
+  font-size: x-large;
+  margin: 5px 0 55px 0;
+}
+header > div > a {
+  color: white;
+  background-color: var(--ramadyDark);
+  font-size: large;
+  padding: 15px;
+  transition: var(--transitionBsckgroundColor);
+  transition: var(--transitionColor);
+}
+/* ***** */
+header > div > a:hover {
+  background-color: var(--ramadyMid);
+  color: var(--ramadyLight);
+}
+/* -------------------------------------------------------- abouOurHotel_section */
+/* #abouOurHotel_section {
+} */
+/* ----------------------------- about_articale */
+#about_articale {
+  height: 40em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#about_leftSection {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../public/img/WhatsApp\ Image\ 2023-02-16\ at\ 4.40.30\ PM.jpeg);
+  background-size: cover;
+}
+#about_rightSection {
+  width: 50%;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  background-color: var(--ramadyDark);
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+#about_rightSection > h2 {
+  font-size: xx-large;
+}
+#about_rightSection > h2 > span {
+  color: var(--ramadyLight);
+}
+#about_rightSection > p {
+  font-size: large;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+#about_rightSection > a {
+  background-color: white;
+  color: var(--ramadyDark);
+  font-size: large;
+  padding: 10px 30px;
+  transition: var(--transitionBsckgroundColor);
+  transition: var(--transitionColor);
+}
+
+/* ***** */
+#about_rightSection > a:hover {
+  background-color: var(--ramadyMid);
+  color: var(--ramadyLight);
+}
+/* ------------------------------ moreAbout_articale */
+#moreAbout_articale {
+  background-color: white;
+  width: 100%;
+  height: 20em;
+  display: flex;
+}
+/* === */
+#moreAbout_articale > div {
+  padding: 60px;
+  text-align: center;
+}
+#moreAbout_articale > div > img {
+  width: 80px;
+}
+#moreAbout_articale > div > h3 {
+  font-size: larger;
+  font-weight: bold;
+}
+#moreAbout_articale > div > p {
+  font-size: large;
+  line-height: 25px;
+}
+/* --------------------------------  footer*/
+footer {
+  width: 100%;
+  height: 5em;
+  background-color: var(--ramadyDark);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+footer > h3 {
+  margin: 30px 0;
+  color: white;
+  font-weight: 500;
+}
+/*                                                     End All */
