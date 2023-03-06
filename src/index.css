@@ -6,6 +6,7 @@ body {
 }
 :root {
   --ramadyDark: rgb(54, 51, 47);
+  --ramady-Dark: rgb(78, 74, 69);
   --ramadyMid: rgb(92, 89, 84);
   --ramadyLight: rgb(209 152 69 / 84%);
   --transitionColor: color 0.3s ease-in-out;
@@ -191,7 +192,7 @@ header > div > a:hover {
 footer {
   width: 100%;
   height: 5em;
-  background-color: var(--ramadyDark);
+  background-color: var(--ramady-Dark);
   margin: 0;
   padding: 0;
   position: relative;

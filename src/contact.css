@@ -6,14 +6,16 @@ body {
 }
 :root {
   --ramadyDark: rgb(54, 51, 47);
+  --ramady-Dark: rgb(78, 74, 69);
   --ramadyMid: rgb(92, 89, 84);
   --ramadyLight: rgb(209 152 69 / 84%);
-  --transitionColor: color 0.3s ease-in-out;
+  --transitionColor: color 0.2s ease-in-out;
   --transitionBsckgroundColor: background-color 0.5s
     cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 a {
   text-decoration: none;
+  color: white;
 }
 /* -------------------- nav */
 nav {
@@ -70,17 +72,107 @@ nav > ul a {
 nav > ul a:hover {
   color: var(--ramadyLight);
 }
-/* --------------------------------- header */
+/* --------------------------------- contactUs_section */
+#contactUs_section {
+  /* width: 100%; */
+  height: 45em;
+  margin-top: 80px;
+  padding: 20px 310px;
+  color: var(--ramadyMid);
+}
+#contactUs_section > h1 {
+  font-size: 50px;
+  color: var(--ramadyDark);
+  margin-bottom: 15px;
+}
+#contactUs_section > h1 > span {
+  color: var(--ramadyLight);
+}
+#contactUs_section > h4 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+#contactUs_section > form {
+  width: 100%;
+}
+#contactUs_section > form > label {
+  font-size: large;
+  font-weight: bolds;
+}
+#contactUs_section > form > label input {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0 30px 0;
+  color: black;
+  font-size: large;
+  background-color: rgba(240, 248, 255, 0);
+  border: 2px solid var(--ramadyMid);
+  border-radius: 2px;
+}
+#contactUs_section > form textarea {
+  margin: 5px 0 30px 0;
+  color: black;
+  background-color: rgba(240, 248, 255, 0);
+  border: 2px solid var(--ramadyMid);
+  border-radius: 2px;
+}
+#contactUs_section #submit_us {
+  color: rgb(255, 255, 255);
+  background-color: var(--ramadyDark);
+  font-size: large;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: var(--transitionColor);
+  transition: var(--transitionBsckgroundColor);
+}
+#contactUs_section #submit_us:hover {
+  color: var(--ramadyLight);
+  background-color: var(--ramadyMid);
+}
+
+/* --------------------------------- comunicationWay_section */
+#comunicationWay_section {
+  /* width: 100%; */
+  height: 20em;
+  padding: 20px 5em;
+  background-color: var(--ramadyDark);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#comunicationWay_section > div {
+  width: 20%;
+  height: 20em;
+  padding: 20px 50px;
+  text-align: center;
+}
+#comunicationWay_section > div {
+  margin-top: 45px;
+}
+#comunicationWay_section > div img {
+  width: 70px;
+}
+#comunicationWay_section > div h2 {
+  color: rgb(211, 211, 211);
+}
+#comunicationWay_section > div > span a {
+  color: rgb(131, 131, 131);
+  letter-spacing: 3px;
+  transition: var(--transitionColor);
+}
+#comunicationWay_section > div > span a:hover {
+  color: var(--ramadyLight);
+}
 /* --------------------------------  footer*/
 footer {
   width: 100%;
   height: 5em;
-  background-color: var(--ramadyDark);
+  background-color: var(--ramady-Dark);
   margin: 0;
   padding: 0;
   position: relative;
-  /* bottom: 0; */
-  top: 100em; /**/
+  bottom: 0;
   display: flex;
   justify-content: center;
 }
